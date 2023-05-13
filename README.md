@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Working flow
+file folder creation
+ src=> router=> routes=> publicRoutes.js (login and register route creation)
+src=> views=> auth => Register.jsx  
+ src=> views=> auth => Lgoin.jsx 
+src=> router=> routes=> publicRoutes.js ( admin/login route creation) 
+ src=> views=> auth => AdminLogin.jsx 
