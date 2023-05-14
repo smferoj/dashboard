@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import logo from '../../assets/images/ecom-logo.png'
-
+import { admin_login } from "../../store/Reducers/authReducer";
+import { useDispatch, useSelector } from "react-redux";
 const AdminLogin = () => {
+  const dispatch = useDispatch()
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -16,7 +18,8 @@ const AdminLogin = () => {
 
   const submit = (e) => {
     e.preventDefault();
-    console.log(state);
+    // console.log(state);
+    dispatch(admin_login(state))
   };
 
   return (
@@ -58,8 +61,7 @@ const AdminLogin = () => {
             </div>
 
             <button className="bg-blue-500 w-full hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-md px-7 py-2 mb-3 ">
-              {" "}
-              Sign in
+              Log in
             </button>
           </form>
         </div>

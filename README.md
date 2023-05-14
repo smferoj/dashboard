@@ -75,4 +75,6 @@ file folder creation
 src=> views=> auth => Register.jsx  
  src=> views=> auth => Lgoin.jsx 
 src=> router=> routes=> publicRoutes.js ( admin/login route creation) 
- src=> views=> auth => AdminLogin.jsx 
+src=> views=> auth => AdminLogin.jsx 
+src=>store=>index.js(rootfile) [redux-toolkit using]
+src=>api=>api.js
